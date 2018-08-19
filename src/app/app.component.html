@@ -34,15 +34,14 @@
       <mat-nav-list>
         <!-- <a mat-list-item routerLink="." *ngFor="let nav of fillerNav">{{nav}}</a> -->
         <a mat-list-item routerLink=".">Signup</a>
-        <a mat-list-item routerLink=".">Menu item 2</a>
+        <a mat-list-item routerLink="test">Test</a>
         <a mat-list-item routerLink=".">Menu item 3</a>
       </mat-nav-list>
     </mat-sidenav>
 
     <mat-sidenav-content>
       <!-- <p *ngFor="let content of fillerContent">{{content}}</p> -->
-      <!-- <router-outlet></router-outlet> -->
-      <mat-slide-toggle>Slide me!</mat-slide-toggle>
+      <router-outlet></router-outlet>
     </mat-sidenav-content>
   </mat-sidenav-container>
 </div>
