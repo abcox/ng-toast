@@ -1,3 +1,4 @@
+
 .example-container {
     display: flex;
     flex-direction: column;
@@ -15,6 +16,8 @@
   }
   
   h1.example-app-name {
+    font-family: Roboto;
+    font-size: 30px;
     margin-left: 8px;
   }
   
@@ -28,5 +31,10 @@
     /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
        `<body>` to be our scrolling element for mobile layouts. */
     flex: 1 0 auto;
+  }
+
+  mat-nav-list a {
+    font-family: Roboto;
+    font-size: 30px;
   }
   

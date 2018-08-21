@@ -11,11 +11,15 @@ import { RouterModule, Routes } from '@angular/router';
 
 // Application
 import { AppComponent } from './app.component';
-import { TestComponent } from './test/test.component';
+import { TestComponent1 } from './test1/test.component';
+import { TestComponent2 } from './test2/test.component';
+//import { TestComponent3 } from './test3/test.component';
 
 // Routing
 const appRoutes: Routes = [
-  { path: 'test', component: TestComponent },
+  { path: 'route1', component: TestComponent1 },
+  { path: 'route2', component: TestComponent2 },
+  //{ path: 'route3', component: TestComponent3 },
   /* { path: 'hero/:id',      component: HeroDetailComponent },
   {
     path: 'heroes',
@@ -32,7 +36,9 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    TestComponent
+    TestComponent1,
+    TestComponent2,
+    //TestComponent3,
   ],
   imports: [
     BrowserModule,

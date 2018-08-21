@@ -24,18 +24,18 @@
 <div class="example-container" [class.example-is-mobile]="mobileQuery.matches" *ngIf="shouldRun">
   <mat-toolbar color="primary" class="example-toolbar">
     <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
-    <h1 class="example-app-name">Engager 2.0</h1>
+    <h1 class="example-app-name">Toastmasters CC Project No.8 - How-to Build Software</h1>
   </mat-toolbar>
 
   <mat-sidenav-container class="example-sidenav-container"
-                         [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+                        [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
     <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
-                 [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+                [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
       <mat-nav-list>
         <!-- <a mat-list-item routerLink="." *ngFor="let nav of fillerNav">{{nav}}</a> -->
-        <a mat-list-item routerLink=".">Signup</a>
-        <a mat-list-item routerLink="test">Test</a>
-        <a mat-list-item routerLink=".">Menu item 3</a>
+        <a mat-list-item routerLink="route1">Menu 1</a>
+        <a mat-list-item routerLink="route2">Menu 2</a>
+        <a mat-list-item routerLink="route3">Menu 3</a>
       </mat-nav-list>
     </mat-sidenav>
 
